@@ -2,6 +2,9 @@
 # The base operating system of the python:3.9-slim image is Debian
 FROM python:3.9-slim
 
+# Install vim and less
+RUN apt-get update && apt-get install -y vim less
+
 # Set the working directory in the container: la directory sarà creata nel container
 WORKDIR /app
 
