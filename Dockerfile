@@ -10,3 +10,6 @@ COPY hello.py /app/hello.py
 
 # Run the Python script when the container launches
 CMD ["python", "hello.py"]
+
+# Build the Docker image aggiunta dopo
+docker build -t hellopy:latest .
